@@ -14,6 +14,10 @@
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,html,css,md,yaml,yml}\"",
     "predeploy": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romanKonovalov34/issue1-konovalov"
+  },
   "keywords": [
     "gulp",
     "webpack",
@@ -22,7 +26,12 @@
     "scss",
     "html"
   ],
-  "homepage": "https://github.com/romanKonovalov34/issue1-konovalov",
+  "author": "Sergei Chevdar <serj.elessar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romanKonovalov34/issue1-konovalov"
+  },
+  "homepage": "https://romankonovalov34.github.io/issue1-konovalov/",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "browser-sync": "^2.27.7",
@@ -69,3 +78,4 @@
     "swiper": "^8.4.5"
   }
 }
+
