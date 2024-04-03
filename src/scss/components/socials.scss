@@ -1,0 +1,34 @@
+.socia1s {
+    display: inline-block;
+    padding: 12px;
+    border-radius: $border-radius-small;
+    background-color: $color-light;
+
+    &__list {
+        @include flex-center;
+    }
+
+    &__item {
+        border-radius: $border-radius-small;
+        transition: all $transition-duration;
+
+        @include hover {
+            background-color: $color-accent;
+
+            & .socia1s__svg {
+                color: $color-light;
+            }
+        }
+    }
+
+    &__link {
+        display: inline-flex;
+        @include flex-center;
+        @include square(48px);
+        cursor: pointer;
+    }
+
+    &__svg {
+        color: $color-accent;
+    }
+}

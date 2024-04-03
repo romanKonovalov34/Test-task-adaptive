@@ -1,0 +1,30 @@
+<section class="process">
+    <div class="container">
+        <div class="process__content" id="process">
+            <div class="process__content-left">
+                <h2 class="process__content-left-title">Рабочий Процесс</h2>
+                <p class="process__content-left-description">
+                    Мой рабочий процесс включает 4 этапа, каждый из которых
+                    помогает мне создавать веб-решения. Эти этапы помогают мне
+                    понять потребности клиентов, разработать эффективную
+                    стратегию и превратить идеи в реальность.
+                </p>
+            </div>
+            <div class="process__content-right">
+                <ul class="process__content-right-list">
+                    @@include('process-stage.html',
+                    {'svg-path':'process-stages-svg-html/analyze-svg.html', title: '1. Анализ', 'text': 'Изучение требований клиента, особенностей рынка и анализ конкурентов.'})
+                    
+                    @@include('process-stage.html',
+                    {'svg-path':'process-stages-svg-html/research-svg.html', title: '2. Проектирование', 'text': 'Определение общей концепции проекта, структуры и функционала.'})
+                    
+                    @@include('process-stage.html',
+                    {'svg-path':'process-stages-svg-html/design-svg.html', title: '3. Разработка и тестирование', 'text': 'Написание кода, внедрение функционала, тестирование.'})
+                    
+                    @@include('process-stage.html',
+                    {'svg-path':'process-stages-svg-html/launch-svg.html', title: '4. Запуск', 'text': 'Запуск, учет обратной связи пользователей и доработки при необходиости.'})
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

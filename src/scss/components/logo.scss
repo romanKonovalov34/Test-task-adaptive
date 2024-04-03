@@ -1,0 +1,57 @@
+.logo {
+    @include flex-center;
+    column-gap: 12px;
+
+    @include hover {
+        .logo__circle {
+            background-color: $color-accent-active;
+        }
+    }
+
+    @include tablet {
+        column-gap: 8px;
+    }
+
+    &__circle {
+        @include flex-center;
+        @include square(56px);
+        border-radius: 50%;
+        background-color: $color-accent;
+        transition: background-color $transition-duration;
+
+        @include tablet {
+            @include square(48px);
+        }
+    }
+
+    &__circle-text {
+        font-family: $font-family-open-sans;
+        color: $color-light;
+        font-size: 24px;
+        font-weight: 500;
+
+        @include mobile {
+            font-size: 22px;
+        }
+    }
+
+    &__text {
+        color: $color-gray-900;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+
+        @include desktop-s {
+            font-size: 30px;
+        }
+
+        @include mobile {
+            display: inline-flex;
+            font-size: 26px;
+        }
+    }
+
+    &_text-light {
+        color: $color-light;
+    }
+}

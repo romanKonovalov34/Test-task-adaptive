@@ -1,0 +1,28 @@
+.burger-button {
+    &__middle-line {
+        display: inline-block;
+        width: 24px;
+        height: 2px;
+        background-color: $color-dark;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: $color-dark;
+        }
+
+        &::before {
+            top: -8px;
+            left: 0px;
+        }
+
+        &::after {
+            bottom: -8px;
+            left: 0px;
+        }
+    }
+}

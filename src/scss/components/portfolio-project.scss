@@ -1,0 +1,54 @@
+.portfolio-project {
+    text-align: left;
+    max-width: 424px;
+    height: 476px;
+
+    @include hover {
+        .portfolio-project__info {
+            box-shadow: $shadow;
+        }
+    }
+
+    @include tablet {
+        height: auto;
+    }
+
+    &__image {
+        border-top-left-radius: $border-radius-medium;
+        border-top-right-radius: $border-radius-medium;
+    }
+
+    &__info {
+        padding: 32px;
+        border: $border-gray;
+        border-top: none;
+        border-bottom-left-radius: $border-radius-medium;
+        border-bottom-right-radius: $border-radius-medium;
+        transition: box-shadow $transition-duration;
+    }
+
+    &__category {
+        text-transform: uppercase;
+        color: $color-gray-400;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+
+    &__title {
+        color: $color-gray-900;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        @include flex-center;
+    }
+}

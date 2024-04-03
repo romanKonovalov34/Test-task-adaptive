@@ -1,0 +1,70 @@
+.services {
+    background-color: $color-gray-50;
+    padding-block: 150px;
+
+    @include tablet {
+        padding-block: $tablet-section-padding;
+    }
+
+    @include mobile {
+        padding-block: $mobile-section-padding;
+    }
+
+    &__content {
+        @include flex-center;
+        justify-content: space-between;
+
+        @include desktop-s {
+            flex-direction: column;
+            row-gap: 80px;
+        }
+
+        @include tablet {
+            row-gap: 0px;
+        }
+
+        &-left {
+            max-width: 529px;
+
+            &-title {
+                @include desktop-title;
+                color: $color-dark;
+
+                @include desktop-s {
+                    text-align: center;
+                }
+
+                @include tablet {
+                    margin-bottom: $tablet-title-margin;
+                    @include tablet-title;
+                }
+
+                @include mobile {
+                    @include mobile-title;
+                }
+            }
+
+            &-description {
+                color: $color-gray-400;
+                margin-block: 24px 50px;
+
+                @include desktop-s {
+                    text-align: center;
+                }
+
+                @include tablet {
+                    margin-bottom: $tablet-description-margin;
+                }
+
+                @include mobile {
+                    margin-bottom: $mobile-description-margin;
+                }
+            }
+
+            &-button {
+                margin-inline: auto;
+                margin-bottom: $tablet-margin;
+            }
+        }
+    }
+}

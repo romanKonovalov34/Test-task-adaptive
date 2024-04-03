@@ -1,0 +1,24 @@
+body {
+    font-family: $font-family-base;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-gray-600;    
+    background: url("../images/background.svg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: $transition-duration;
+}
+
+h1 {
+    @include fluid-text(72, 43)
+}

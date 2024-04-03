@@ -1,0 +1,53 @@
+.collaboration {
+    background-color: $color-gray-900;
+    padding-block: $section-padding-y;
+    text-align: center;
+
+    @include tablet {
+        padding-block: $tablet-section-padding;
+    }
+
+    @include mobile {
+        padding-block: $mobile-section-padding;
+    }
+
+    &__inner {
+        max-width: 844px;
+        margin-inline: auto;
+    }
+
+    &__title {
+        @include desktop-title;
+        color: $color-light;
+
+        @include desktop-s {
+            font-size: 48px;
+        }
+
+        @include tablet {
+            @include tablet-title;
+            margin-bottom: $tablet-title-margin;
+        }
+
+        @include mobile {
+            @include mobile-title;
+        }
+    }
+
+    &__description {
+        color: $color-gray-300;
+        margin-block: 32px;
+
+        @include tablet {
+            margin-block: 0px $tablet-description-margin;
+        }
+
+        @include mobile {
+            margin-block: $mobile-description-margin;
+        }
+    }
+
+    &__button {
+        margin-inline: auto;
+    }
+}

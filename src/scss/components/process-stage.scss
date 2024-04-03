@@ -1,0 +1,57 @@
+.process-stage {
+    padding: 32px;
+    max-width: 312px;
+    height: 276px;
+    background-color: $color-light;
+    border-radius: $border-radius-large;
+    overflow: auto;
+    transition: box-shadow $transition-duration;
+
+    @include hover {
+        box-shadow: $shadow;
+
+        .process-stage__svg-wrapper {
+            background-color: $color-accent;
+
+            & svg {
+                color: $color-light;
+            }
+        }
+    }
+
+    &__svg-wrapper {
+        @include square(72px);
+        @include flex-center;
+        color: $color-accent;
+        background-color: $color-accent-light;
+        border-radius: $border-radius;
+        transition: background-color $transition-duration;
+    }
+
+    &__title {
+        color: $color-gray-900;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 32px 0px 12px 0px;
+    }
+
+    &__description {
+        color: $color-gray-600;
+        font-size: 16px;
+        overflow: auto;
+    }
+
+    &:nth-child(even) {
+        margin-top: 12px;
+    }
+
+    &:nth-child(odd) {
+        margin-top: -12px;
+    }
+
+    @include mobile {
+        &:nth-child(n) {
+            margin-top: 0;
+        }
+    }
+}

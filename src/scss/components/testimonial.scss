@@ -1,0 +1,43 @@
+.testimonial {
+    padding-bottom: $section-padding-y;
+    text-align: center;
+
+    @include tablet {
+        padding-block: $tablet-section-padding;
+    }
+
+    @include mobile {
+        padding-block: $mobile-section-padding;
+    }
+
+    &__header {
+        &-title {
+            @include desktop-title;
+            color: $color-dark;
+
+            @include tablet {
+                @include tablet-title;
+                margin-bottom: $tablet-title-margin;
+            }
+
+            @include mobile {
+                @include mobile-title;
+            }
+        }
+
+        &-description {
+            color: $color-gray-400;
+            max-width: 577px;
+            margin: 24px auto 70px auto;
+
+            @include tablet {
+                margin-block: 0px $tablet-description-margin;
+                text-align: center;
+            }
+
+            @include mobile {
+                margin-bottom: $mobile-description-margin;
+            }
+        }
+    }
+}

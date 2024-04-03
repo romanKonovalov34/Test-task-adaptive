@@ -1,0 +1,49 @@
+.blog-article {
+    max-width: 312px;
+    min-height: 350px;
+    border: 1px solid $color-gray-50;
+    border-radius: $border-radius-medium;
+    overflow: hidden;
+    transition: box-shadow $transition-duration;
+
+    @include hover {
+        box-shadow: $shadow;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__info {
+        padding: 24px;
+    }
+
+    &__meta {
+        color: $color-gray-400;
+        font-size: 14px;
+        line-height: 20px;
+        @include flex-center;
+        justify-content: left;
+        margin-bottom: 8px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        &-date::after {
+            content: '/';
+            margin-inline: 3px;
+
+            @include tablet {
+                content: '';
+            }
+        }
+    }
+
+    &__title {
+        color: $color-dark;
+        font-weight: 500;
+    }
+}

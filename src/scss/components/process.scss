@@ -1,0 +1,90 @@
+.process {
+    background-color: $color-gray-50;
+    padding-block: 108px 140px;
+
+    @include tablet {
+        padding-bottom: 40px;
+    }
+
+    &__content {
+        @include flex-center;
+        padding-top: 140px;
+        justify-content: space-between;
+
+        @include desktop-s {
+            flex-direction: column;
+            row-gap: 80px;
+        }
+
+        @include tablet {
+            padding-top: $tablet-section-padding;
+            row-gap: 0px;
+        }
+
+        &-left {
+            max-width: 529px;
+            
+            @include desktop-s {
+                max-width: 650px;
+            }
+
+            @include tablet {
+                max-width: $tablet-text-width;
+            }
+
+            &-title {
+                @include desktop-title;
+                margin-bottom: $margin;
+
+                @include desktop-s {
+                    text-align: center;
+                }
+
+                @include tablet {
+                    @include tablet-title;
+                    margin-bottom: $tablet-title-margin;
+                }
+
+                @include mobile {
+                    @include mobile-title;
+                }
+            }
+
+            &-description {
+                color: $color-gray-500;
+
+                @include desktop-s {
+                    text-align: center;
+                }
+
+                @include tablet {
+                    margin-bottom: $tablet-description-margin;
+                }
+
+                @include mobile {
+                    margin-bottom: $mobile-description-margin;
+                }
+            }
+        }
+
+        &-right {
+            padding-top: 12px;
+            
+            @include mobile {
+                padding-top: 0;
+            }
+
+            &-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: $margin;
+                row-gap: 12px;
+
+                @include mobile {
+                    grid-template-columns: 1fr;
+                    row-gap: $mobile-margin-small;
+                }
+            }
+        }
+    }
+}

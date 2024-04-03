@@ -1,0 +1,42 @@
+.blog {
+    padding-block: $section-padding-y;
+
+    @include tablet {
+        padding-block: $tablet-section-padding;
+    }
+
+    @include mobile {
+        padding-block: $mobile-section-padding;
+    }
+
+    &__title {
+        @include desktop-title;
+        text-align: center;
+
+        @include tablet {
+            @include tablet-title;
+            margin-bottom: $tablet-title-margin;
+        }
+    
+        @include mobile {
+            @include mobile-title;
+        }
+    }
+
+    &__description {
+        color: $color-gray-400;
+        line-height: 26px;
+        max-width: 540px;
+        margin-inline: auto;
+        margin-block: $margin 70px;
+        text-align: center;
+
+        @include tablet {
+            margin-block: 0px $tablet-description-margin;
+        }
+    
+        @include mobile {
+            margin-bottom: $mobile-description-margin;
+        }
+    }
+}

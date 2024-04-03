@@ -1,0 +1,64 @@
+.clients {
+    padding-block: $section-padding-y 164px;
+    text-align: center;
+
+    @include tablet {
+        padding: $tablet-section-padding 0px;
+    }
+
+    @include mobile {
+        padding-block: $mobile-section-padding;
+    }
+
+    &__title {
+        @include desktop-title;
+
+        @include tablet {
+            @include tablet-title;
+            margin-bottom: $tablet-title-margin;
+        }
+
+        @include mobile {
+            @include mobile-title;
+        }
+    }
+
+    &__description {
+        color: $color-gray-400;
+        max-width: 577px;
+        margin: $margin auto;
+        margin-bottom: 101px;
+
+        @include tablet {
+            margin-bottom: 75px;
+        }
+
+        @include mobile {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__list {
+        @include flex-center;
+        justify-content: space-between;
+        column-gap: $margin;
+
+        @include desktop-s {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: $margin;
+            justify-items: center;
+        }
+
+        @include mobile {
+        }
+    }
+
+    &__item {
+        display: inline-flex;
+
+        @include mobile {
+            max-width: 100px;
+        }
+    }
+}

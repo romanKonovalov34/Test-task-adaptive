@@ -1,0 +1,60 @@
+$color-light: #ffffff;
+$color-accent: #a53dff;
+$color-accent-light: rgba(237, 216, 255, 0.5);
+$color-accent-active: #8431CC;
+$color-dark: #333333;
+$color-dark-alt: #000000;
+$color-gray-50: #f0f1f3;
+$color-gray-100: #e6e8eb;
+$color-gray-200: #c3c7ce;
+$color-gray-300: #a5acb5;
+$color-gray-400: #87909d;
+$color-gray-500: #697484;
+$color-gray-600: #556070;
+$color-gray-700: #424e60;
+$color-gray-800: #2b384c;
+$color-gray-900: #132238;
+
+$linear-gradient: rgba(255, 234, 198, 0.2), rgba(255, 234, 198, 0.14),
+    rgba(255, 234, 198, 0.13);
+
+$border-accent: 1px solid $color-accent;
+$border-gray: 1px solid $color-gray-100;
+$border-radius: 6px;
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 12px;
+
+$shadow: 0px 12px 64px rgba(28, 25, 25, 0.12);
+
+$font-family-base: 'Montserrat';
+$font-family-open-sans: 'Open Sans';
+$font-family-roboto: 'Roboto';
+
+$container-width: 1320px;
+$container-padding-x: 20px;
+$section-padding-y: 100px;
+
+$button-height: 48px;
+
+$transition-duration: 0.3s;
+
+$margin: 24px;
+$margin-large: 40px;
+
+// tablet
+$tablet-margin: 40px;
+$tablet-title-margin: 30px;
+$tablet-description-margin: 40px;
+$tablet-section-padding: 90px;
+$tablet-article-margin: 30px;
+$tablet-article-margin-small: 20px;
+$tablet-text-width: 540px;
+
+// mobile
+$mobile-padding: 25px;
+$mobile-margin: 30px;
+$mobile-margin-small: 20px;
+$mobile-margin-large: 40px;
+$mobile-description-margin: 30px;
+$mobile-section-padding: 70px;

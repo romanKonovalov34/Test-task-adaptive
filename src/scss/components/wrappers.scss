@@ -1,0 +1,35 @@
+.card-wrapper {
+    margin-bottom: -108px;
+    position: relative;
+}
+
+.discuss-wrapper {
+    margin-bottom: -60px;
+    position: relative;
+}
+
+.slider-wrapper {
+    @include desktop-s {
+        display: none;
+    }
+
+    &-desktop {
+        display: none;
+
+        @include desktop-s {
+            display: flex;
+        }
+
+        @include mobile {
+            display: none
+        }
+    }
+
+    &-mobile {
+        display: none;
+
+        @include mobile {
+            display: flex;
+        }
+    }
+}

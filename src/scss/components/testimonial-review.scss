@@ -1,0 +1,33 @@
+.testimonial-quote {
+    margin-bottom: 50px;
+    font-weight: 500;
+    margin-inline: auto;
+
+    &__text {
+        color: $color-gray-800;
+        max-width: 872px;
+
+        @include tablet {
+            max-width: 700px;
+        }
+    }
+
+    &__author-info {
+        color: $color-dark-alt;
+        margin-inline: auto;
+        
+        &-name {
+            display: block;
+            line-height: 26px;
+            margin-block: 24px 8px;
+            font-style: normal;
+        }
+
+        &-position {
+            display: block;
+            font-weight: 300;
+            font-size: 16px;
+            font-style: normal;
+        }
+    }
+}

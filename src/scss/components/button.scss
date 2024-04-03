@@ -1,0 +1,53 @@
+.button {
+    height: $button-height;
+    color: $color-light;
+    background-color: $color-accent;
+    border-radius: $border-radius-small;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 24px 12px 24px;
+    @include flex-center(true);
+
+    @include hover {
+        background-color: $color-accent-active;
+    }
+
+    &_arrow {
+        & svg {
+            color: $color-light;
+            margin: 6px;
+        }
+
+        & span {
+            margin-right: 12px;
+        }
+    }
+
+    &_download {
+        & svg {
+            color: $color-light;
+            margin-inline: 2px 14px;
+        }
+    }
+
+    &_transparent {
+        color: $color-accent;
+        background-color: transparent;
+        border: 1px solid currentColor;
+
+        & svg {
+            color: $color-accent;
+        }
+
+        @include hover {
+            color: $color-accent-active;
+            border-color: currentColor;
+            background-color: $color-light;
+
+            & svg {
+                color: currentColor;
+            }
+        }
+    }
+}

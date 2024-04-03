@@ -1,0 +1,34 @@
+.double-field {
+    display: flex;
+    column-gap: 24px;
+
+    @include mobile {
+        display: contents;
+    }
+
+    &__item {
+        &:first-child {
+            max-width: 200px;
+
+            @include mobile {
+                max-width: 100%;
+            }
+        }
+
+        &:last-child {
+            max-width: 336px;
+
+            @include mobile {
+                max-width: 100%;
+            }
+        }
+
+        &:nth-child(n) {
+            padding-block: 24px 14px;
+        }
+    }
+
+    &__input {
+        width: inherit;
+    }
+}

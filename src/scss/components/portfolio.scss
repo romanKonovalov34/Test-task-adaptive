@@ -1,0 +1,59 @@
+.portfolio {
+    padding-block: $section-padding-y;
+    text-align: center;
+
+    @include tablet {
+        padding-block: $tablet-section-padding;
+    }
+
+    @include tablet {
+        padding-block: $mobile-section-padding;
+    }
+
+    &__title {
+        @include desktop-title;
+
+        @include tablet {
+            @include tablet-title;
+            margin-bottom: $tablet-title-margin;
+        }
+
+        @include mobile {
+            @include mobile-title;
+        }
+    }
+
+    &__description {
+        color: $color-gray-400;
+        max-width: 577px;
+        margin: $margin auto 70px auto;
+
+        @include tablet {
+            margin-block: 0px $tablet-description-margin;
+        }
+
+        @include mobile {
+            margin-bottom: $mobile-description-margin;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $margin;
+        margin-bottom: 50px;
+
+        @include desktop-s {
+            grid-template-columns: auto auto;
+            justify-content: center;
+        }
+
+        @include mobile {
+            grid-template-columns: auto;
+        }
+    }
+
+    &__button {
+        margin-inline: auto;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+@@include('html/head.html', {
+'title': 'Главная'
+})
+
+<body>
+
+  <main class="content">
+    @@include('html/header.html')
+    @@include('html/about.html')
+    
+    <div class="card-wrapper">
+      @@include('html/card.html')
+    </div>
+    
+    @@include('html/process.html')
+    @@include('html/portfolio.html')
+    @@include('html/collaboration.html')
+    @@include('html/blog.html')
+    @@include('html/services.html')
+    @@include('html/clients.html')
+    @@include('html/testimonial.html')
+
+    <div class="discuss-wrapper">
+      @@include('html/discuss.html')
+    </div>
+
+    @@include('html/footer.html')
+    
+  </main>
+  
+  @@include('html/mobile-menu.html')
+  
+  @@include('html/scripts.html')
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.contact-card {
+    @include flex-center();
+    justify-content: flex-start;
+    max-width: 400px;
+    transition: box-shadow $transition-duration;
+
+    @include hover {
+        box-shadow: $shadow;
+
+        .contact-card__svg-wrapper {
+            background-color: $color-accent;
+        }
+
+        .contact-card__svg {
+            color: $color-light;
+        }
+    }
+
+    &__svg-wrapper {
+        @include flex-center;
+        @include square(48px);
+        background-color: $color-accent-light;
+        border-radius: $border-radius-small;
+        margin: 24px;
+        transition: background-color $transition-duration;
+    }
+
+    &__svg {
+        color: $color-accent;
+        transition: color $transition-duration;
+    }
+
+    &__info {
+        display: inline-flex;
+        flex-direction: column;
+        row-gap: 4px;
+    }
+
+    &__label {
+        font-size: 14px;
+        line-height: 20px;
+        color: $color-gray-700;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        color: $color-gray-900;
+    }
+}

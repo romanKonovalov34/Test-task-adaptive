@@ -1,0 +1,48 @@
+.header {
+    background-color: $color-light;
+
+    &__inner {
+        height: 96px;
+        @include flex-center;
+
+        @include desktop-s {
+            height: 83px;
+        }
+
+        @include mobile {
+            height: 75px;
+        }
+    }
+
+    &__logo-wrapper {
+        margin-right: auto;
+    }
+
+    &__menu {
+        &-list {
+            @include flex-center;
+        }
+
+        &-link {
+            @include reset-link;
+            padding: 12px 24px;
+            color: $color-dark;
+            font-size: 16px;
+            font-weight: 500;
+            @include nav-highlighter;
+
+            @include desktop-s {
+                padding-inline: 15px;
+            }
+
+            @include tablet {
+                padding-inline: 12px;
+            }
+        }
+    }
+
+    &__button {
+        width: 111px;
+        @include flex-center;
+    }
+}

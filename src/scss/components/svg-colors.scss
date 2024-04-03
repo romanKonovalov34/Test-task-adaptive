@@ -1,0 +1,40 @@
+.google-svg {
+    @include hover {
+        --google-color-1: #3969e8;
+        --google-color-2: #d50f25;
+        --google-color-3: #eeb211;
+        --google-color-4: #009925;
+    }
+}
+
+.dribbble-svg {
+    @include hover {
+        --dribbble-color: #000000;
+    }
+}
+
+.linkedIn-svg {
+    @include hover {
+        --linkedIn-color-1: #000000;
+        --linkedIn-color-2: #006699;
+    }
+}
+
+.amazon-svg {
+    @include hover {
+        --amazon-color-1: #000000;
+        --amazon-color-2: #ff9900;
+    }
+}
+
+.medium-svg {
+    @include hover {
+        --medium-color: #000000;
+    }
+}
+
+.spotify-svg {
+    @include hover {
+        --spotify-color: #1ED761;
+    }
+}

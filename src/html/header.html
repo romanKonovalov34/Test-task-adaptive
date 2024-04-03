@@ -1,0 +1,39 @@
+<header class="header" id="header">
+    <div class="header__inner container">
+        <div class="header__logo-wrapper">
+            @@include('logo.html', {'hidden-tablet': 'hidden-tablet'})
+        </div>
+        <nav class="header__menu hidden-mobile">
+            <ul class="header__menu-list">
+                <li class="header__menu-item">
+                    <a href="#about" class="header__menu-link"><span>Главная</span></a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#card" class="header__menu-link"><span>Обо мне</span></a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#process" class="header__menu-link"><span>Процесс</span></a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#portfolio" class="header__menu-link"><span>Портфолио</span></a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#blog" class="header__menu-link"><span>Блог</span></a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#services" class="header__menu-link"><span>Сервисы</span></a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#discuss" class="header__button button hidden-mobile">
+            Контакт
+        </a>
+        <button
+            class="header__burger-button burger-button visible-mobile"
+            onclick="mobileMenu.showModal()"
+        >
+            <span class="visually-hidden">Открыть навигационное меню</span>
+            <span class="burger-button__middle-line"></span>
+        </button>
+    </div>
+</header>

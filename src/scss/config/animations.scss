@@ -1,0 +1,51 @@
+@keyframes hide-bottom {
+    from {
+        opacity: 0;
+        top: -200px;
+        filter: blur(20px);
+    }
+    to {
+        opacity: 1;
+        top: 0px;
+        filter: blur(0px);
+    }
+}
+
+@keyframes hide-top {
+    from {
+        opacity: 1;
+        top: 0px;
+        filter: blur(0px);
+    }
+    to {
+        opacity: 0;
+        top: -408px;
+        filter: blur(20px);
+    }
+}
+
+@keyframes blur-on {
+    from {
+        backdrop-filter: blur(0px);
+    }
+    to {
+        backdrop-filter: blur(10px);
+    }
+}
+
+@keyframes blur-off {
+    from {
+        backdrop-filter: blur(5px);
+    }
+    to {
+        backdrop-filter: blur(0px);
+    }
+}
+
+.animation-open {
+    animation: hide-bottom $transition-duration forwards;
+}
+
+.animation-close {
+    animation: hide-top $transition-duration backwards;
+}

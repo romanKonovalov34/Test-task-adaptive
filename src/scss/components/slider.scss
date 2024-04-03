@@ -1,0 +1,139 @@
+.itc-slider {
+    position: relative;
+
+    @include desktop-s {
+        max-width: 984px;
+        min-width: 340px;
+        margin-inline: auto;
+    }
+
+    @include mobile {
+        max-width: 310px;
+        min-width: 340px;
+        margin-inline: auto;
+    }
+
+    &:hover {
+        .itc-slider-btn {
+            opacity: 1;
+        }
+    }
+}
+
+.itc-slider-wrapper {
+    overflow: hidden;
+    visibility: hidden;
+    margin: 0px -15px -24px -15px;
+    padding: 0px 15px 48px 15px;
+}
+
+.testimonial .itc-slider-wrapper {
+    margin: 0px;
+    padding: 0px;
+    visibility: visible;
+}
+
+.itc-slider-items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.itc-slider-item {
+    @include flex-center;
+    align-items: start;
+    justify-content: space-between;
+    column-gap: 17px;
+    flex: 0 0 100%;
+
+    @include tablet {
+        column-gap: 12px;
+    }
+
+    @include mobile {
+        justify-content: center;
+    }
+
+    &-active {
+        visibility: visible;
+    }
+}
+
+.itc-slider-transition-none {
+    transition: none;
+}
+
+.itc-slider-btn {
+    position: absolute;
+    display: flex;
+    top: 113px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    background: rgb(0 0 0 / 20%);
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.itc-slider-btn-hide {
+    display: none;
+}
+
+.itc-slider-btn-prev {
+    left: 0;
+    transform: translate(50%, -50%);
+}
+
+.itc-slider-btn-next {
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.itc-slider-btn:hover,
+.itc-slider-btn:focus {
+    color: #fff;
+    text-decoration: none;
+    background: rgb(0 0 0 / 30%);
+    outline: 0;
+}
+
+.itc-slider-btn::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.itc-slider-btn-prev::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.itc-slider-btn-next::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.itc-slider-indicators {
+    @include flex-center;
+    column-gap: 12px;
+    list-style: none;
+}
+
+.itc-slider-indicator {
+    width: 8px;
+    height: 8px;
+    background-color: $color-gray-200;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.itc-slider-indicator-active {
+    width: 30px;
+    border-radius: 100px;
+    background-color: $color-gray-900;
+}

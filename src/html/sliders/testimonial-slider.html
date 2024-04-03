@@ -1,0 +1,44 @@
+<div
+    class="itc-slider"
+    data-slider="itc-slider"
+    data-loop="true"
+    data-autoplay="true"
+    data-interval="2500"
+>
+    <div class="itc-slider-wrapper">
+        <div class="itc-slider-items">
+            <div class="itc-slider-item">
+                @@include('../testimonial-review.html',
+                {
+                    'text': 'Сотрудничество с Романом было положительным опытом. Его ответственный подход и участие в проекте произвели хорошее впечатление. Я рекомендую его как надежного коллегу с креативным подходом к работе.',
+                    'author': 'Анна Сидорова',
+                    'position': 'Главный технический директор, PineApple'
+                })
+            </div>
+            <div class="itc-slider-item">
+                @@include('../testimonial-review.html',
+                {
+                    'text': 'Во время совместной работы с разработчиком он проявил в себе профессионализм и готовность к сотрудничеству. Его идеи и решения оказались весьма полезными для проекта. Я готов порекомендовать его в качестве надежного партнера.',
+                    'author': 'Иван Иванов',
+                    'position': 'Технический директор, MicroHard'
+                })
+            </div>
+            <div class="itc-slider-item">
+                @@include('../testimonial-review.html',
+                {
+                    'text': 'Было приятно поработать с данным разработчиком. Его дружелюбный и открытый настрой способствовали плодотворной работе. Он является целеустремленным специалистом с четким пониманием задачи.',
+                    'author': 'Петр Новиков',
+                    'position': 'Старший разработчик, SpotiFly'
+                })
+            </div>
+        </div>
+    </div>
+    <button class="itc-slider-btn itc-slider-btn-prev"></button>
+    <button class="itc-slider-btn itc-slider-btn-next"></button>
+
+    <ul class="itc-slider-indicators">
+        <li class="itc-slider-indicator" data-slide-to="0"></li>
+        <li class="itc-slider-indicator" data-slide-to="1"></li>
+        <li class="itc-slider-indicator" data-slide-to="2"></li>
+    </ul>
+</div>

@@ -1,0 +1,44 @@
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="portfolio__inner">
+            <h2 class="portfolio__title">Портфолио</h2>
+            <p class="portfolio__description">
+                Портфолио представляет мои работы в области веб-разработки,
+                которые я создавал или принимал участие.
+            </p>
+            <ul class="portfolio__list">
+                <li class="portfolio__item">
+                    <a class="portfolio__link" href="">
+                        @@include('portfolio-project.html', {'image': '../images/portfolio/fashion-vogue.jpg', 'title': 'FashionVogue', 'text': 'Веб-платформа, представляющая широкий ассортимент стильной одежды и аксессуаров.'})
+                    </a>
+                </li>
+                <li class="portfolio__item">
+                    <a class="portfolio__link" href="">
+                        @@include('portfolio-project.html', {'image': '../images/portfolio/event-planner.jpg', 'title': 'EventPlanner', 'text': 'Платформа для организации и планирования мероприятий.'})
+                    </a>
+                </li>
+                <li class="portfolio__item">
+                    <a class="portfolio__link" href="">
+                        @@include('portfolio-project.html', {'image': '../images/portfolio/tech-news.jpg', 'title': 'TechNews', 'text': 'Популярный новостной портал о современных технологиях и инновациях.'})
+                    </a>
+                </li>
+                <li class="portfolio__item">
+                    <a class="portfolio__link" href="">
+                        @@include('portfolio-project.html', {'image': '../images/portfolio/real-estate.jpg', 'title': 'RealEstate', 'text': 'Онлайн-портал для поиска и продажи недвижимости.'})
+                    </a>
+                </li>
+                <li class="portfolio__item">
+                    <a class="portfolio__link" href="">
+                        @@include('portfolio-project.html', {'image': '../images/portfolio/travel-explorer.jpg', 'title': 'TravelExplorer', 'text': 'Веб-приложение, предлагающее богатый выбор туристических маршрутов и экскурсий.'})
+                    </a>
+                </li>
+                <li class="portfolio__item">
+                    <a class="portfolio__link" href="">
+                        @@include('portfolio-project.html', {'image': '../images/portfolio/auto-trader.jpg', 'title': 'AutoTrader', 'text': 'Онлайн-площадка для купли-продажи автомобилей различных марок и классов.'})
+                    </a>
+                </li>
+            </ul>
+            <button class="portfolio__button button">Все проекты</button>
+        </div>
+    </div>
+</section>
